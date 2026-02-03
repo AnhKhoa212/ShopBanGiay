@@ -1,0 +1,12 @@
+:root{
+    --color-1: #02697B;
+}
+body{
+    font-family: 'Roboto', sans-serif;
+}
+.container{
+    width:100%;
+    max-width: calc(100% - 22%);
+    margin-left: auto;
+    margin-right: auto;
+}
