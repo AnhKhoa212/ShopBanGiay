@@ -144,6 +144,14 @@ nav a {
     background: red;
 }
 
+.orange {
+    background: rgba(241, 116, 6, 0.862);
+}
+
+.aqua {
+    background: #00ffff;
+}
+
 .sizes button {
     padding: 8px 16px;
     margin-right: 8px;
@@ -156,6 +164,30 @@ nav a {
     background: #000;
     color: #fff;
     border-color: #000;
+}
+
+.header nav a {
+    display: inline-block;
+    padding: 12px 18px;
+    text-decoration: none;
+    color: #050505;
+    font-weight: 500;
+}
+
+.header nav a:hover {
+    background-color: #141313;
+    color: #fff;
+    border-radius: 6px;
+}
+
+.header nav a.sale {
+    color: #ff4d4f;
+    font-weight: 700;
+}
+
+.header nav a.sale:hover {
+    background-color: #ff4d4f;
+    color: white;
 }
 
 /* ================= BUTTON ================= */
