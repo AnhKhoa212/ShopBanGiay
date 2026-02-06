@@ -1,0 +1,49 @@
+/*  Thiết lập Box-Sizing (QUAN TRỌNG NHẤT)
+   Giúp width và height bao gồm cả padding và border. }*/
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+/* 2. Xóa bỏ margin và padding mặc định của tất cả các thẻ */
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/* 3. Thiết lập font mặc định và chiều cao dòng cho dễ đọc */
+body {
+    line-height: 1.5;
+    -webkit-font-smoothing: antialiased; /* Làm mượt chữ trên Mac/iOS */
+}
+
+/* 4. Loại bỏ các chấm tròn ở đầu dòng danh sách (ul, ol)
+   Rất cần thiết khi làm Menu */
+ul, ol {
+    list-style: none;
+}
+
+/* 5. Loại bỏ gạch chân và màu xanh mặc định của thẻ a (link) */
+a {
+    text-decoration: none;
+    color: inherit; /* Kế thừa màu chữ từ thẻ cha */
+}
+
+/* 6. Giúp ảnh không bao giờ bị tràn ra ngoài khung chứa */
+img, picture, video, canvas, svg {
+    display: block;
+    max-width: 100%;
+}
+
+/* 7. Kế thừa font chữ cho các thẻ form (input, button...)
+   Mặc định trình duyệt dùng font rất xấu cho các thẻ này */
+input, button, textarea, select {
+    font: inherit;
+    outline: none;
+    border: none;
+}
+
+/* 8. Xóa bỏ thanh cuộn ngang không mong muốn (tuỳ chọn) */
+html {
+    scroll-behavior: smooth; 
+}

@@ -1,0 +1,433 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100..900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../assets/css/reset.css">
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
+  <title>Trang Chủ</title>
+</head>
+
+<body>
+
+  <header>
+    <div class="khoi-tren">
+      <div class="container">
+        <div class="wrap">
+
+          <div class="logo">
+            <a href="#">
+              <img src="../assets/IMG/logo.jpg" alt="logo">
+            </a>
+          </div>
+
+          <div class="tim-kiem">
+            <input type="text" placeholder="Tìm Kiếm Sản Phẩm...">
+            <button class="nut-tim-kiem">
+              <i class="fa-solid fa-magnifying-glass"></i>
+            </button>
+          </div>
+
+          <div class="tai-khoan">
+            <a href="#" class="tai-khoan-link">
+              <div class="icon-user">
+                <i class="fa-regular fa-circle-user"></i>
+              </div>
+
+              <div class="text-user">
+                <span class="text-1">Xin chào, Quý khách</span>
+                <span class="text-2">Đăng nhập / Đăng ký</span>
+              </div>
+            </a>
+          </div>
+
+          <div class="gio-hang">
+            <a href="#">
+              <div class="icon-gio-hang">
+                <i class="fa-solid fa-basket-shopping"></i>
+              </div>
+              <div class="gio-hang-text">Giỏ Hàng</div>
+            </a>
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+    <div class="khoi-duoi">
+      <div class="container">
+        <ul>
+          <li><a href="#">Trang Chủ</a></li>
+          <li><a href="#">Danh Mục Sản Phẩm</a></li>
+          <li><a href="#">Người Lớn</a></li>
+          <li><a href="#">Trẻ Em</a></li>
+          <li><a href="#">Ưu Đãi</a></li>
+        </ul>
+      </div>
+    </div>
+  </header>
+
+  <div id="modal-login" class="modal">
+    <form class="modal-content">
+      <div class="container-login">
+        <span class="close" id="nut-dong">&times;</span>
+        
+        <h2 style="margin-bottom: 20px; text-align: center;">Login</h2>
+
+        <div style="margin-bottom: 15px;">
+            <label style="display:block; margin-bottom:5px; font-weight:bold;">Email</label>
+            <input type="text" placeholder="Email" required style="width:100%; padding:10px; border:1px solid #ccc; border-radius:4px;">
+        </div>
+
+        <div style="margin-bottom: 15px;">
+            <label style="display:block; margin-bottom:5px; font-weight:bold;">Password</label>
+            <input type="password" placeholder="Password" required style="width:100%; padding:10px; border:1px solid #ccc; border-radius:4px;">
+        </div>
+        
+        <button type="submit" class="btn-cam">Login</button>
+
+        <div style="margin-top: 15px; font-size: 13px;">
+          <input type="checkbox"> Đồng ý với điều khoản...
+          <span style="float: right;">Chưa có tài khoản? <a href="#" style="color:red">Sign Up</a></span>
+        </div>
+      </div>
+    </form>
+  </div>
+    
+  <div id="modal-signup" class="modal">
+  <form class="modal-content">
+    <div class="container-login">
+      <span class="close" id="nut-dong-signup">&times;</span>
+      <h2 style="margin-bottom: 20px; text-align: center;">Sign Up</h2>
+      
+      <div style="margin-bottom: 15px;">
+          <label style="display:block; margin-bottom:5px; font-weight:bold;">Name</label>
+          <input type="text" placeholder="Name" required style="width:100%; padding:10px; border:1px solid #ccc; border-radius:4px;">
+      </div>
+
+      <div style="margin-bottom: 15px;">
+          <label style="display:block; margin-bottom:5px; font-weight:bold;">Email</label>
+          <input type="text" placeholder="Email" required style="width:100%; padding:10px; border:1px solid #ccc; border-radius:4px;">
+      </div>
+
+      <div style="margin-bottom: 15px;">
+          <label style="display:block; margin-bottom:5px; font-weight:bold;">Password</label>
+          <input type="password" placeholder="Password" required style="width:100%; padding:10px; border:1px solid #ccc; border-radius:4px;">
+      </div>
+      
+      <button type="submit" class="btn-cam">Create account</button>
+
+      <div style="margin-top: 15px; font-size: 13px;">
+        <input type="checkbox"> Đồng ý với điều khoản...
+        <span style="float: right;">Đã có tài khoản? <a href="#" id="link-login-now" style="color:red">Login</a></span>
+      </div>
+      </div>
+    </form>
+  </div>
+
+  <div class="banner">
+    <img src="../assets/IMG/banner.jpg" alt="banner">
+  </div>
+
+  <section class="san-pham-noi-troi">
+    <div class="container">
+      <h1 class="tieu-de">Best Seller</h1>
+      <h1 class="tieu-de-block">Giày</h1>
+      <div class="danh-sach-san-pham">
+
+        <div class="san-pham">
+          <a href="#">
+            <img src="../assets/IMG/OIP.webp" alt="Sneaker">
+          </a>
+
+          <h3 class="ten-san-pham">Giày Sneaker</h3>
+
+          <p class="mo-ta">
+            Giày sneaker thời trang, phong cách trẻ trung, phù hợp đi học và đi chơi.
+          </p>
+
+          <label>Màu:</label>
+          <select>
+            <option>Đỏ</option>
+            <option>Trắng</option>
+            <option>Đen</option>
+          </select>
+
+          <p class="gia">2.000.000đ</p>
+          <button class="nut-mua">Mua ngay</button>
+        </div>
+
+        <div class="san-pham">
+          <a href="#">
+            <img src="../assets/IMG/adidas(1).webp" alt="Adidas">
+          </a>
+
+          <h3 class="ten-san-pham">Giày Adidas</h3>
+
+          <p class="mo-ta">
+            Giày Adidas thời trang, phong cách trẻ trung, phù hợp đi học và đi chơi.
+          </p>
+
+          <label>Màu:</label>
+          <select>
+            <option>Đen</option>
+            <option>Trắng</option>
+            <option>Xám</option>
+          </select>
+
+          <p class="gia">1.500.000đ</p>
+          <button class="nut-mua">Mua ngay</button>
+        </div>
+
+        <div class="san-pham">
+          <a href="#">
+            <img src="../assets/IMG/nike.jpg" alt="Nike">
+          </a>
+
+          <h3 class="ten-san-pham">Giày Nike</h3>
+
+          <p class="mo-ta">
+            Giày Nike thời trang, phong cách trẻ trung, phù hợp đi học và đi chơi.
+          </p>
+
+          <label>Màu:</label>
+          <select>
+            <option>Xám</option>
+            <option>Đỏ</option>
+            <option>Xanh Dương</option>
+          </select>
+
+          <p class="gia">1.799.000đ</p>
+          <button class="nut-mua">Mua ngay</button>
+        </div>
+
+        <div class="san-pham">
+          <a href="#">
+            <img src="../assets/IMG/mlb.jpg" alt="MLB">
+          </a>
+
+          <h3 class="ten-san-pham">Giày MLB</h3>
+
+          <p class="mo-ta">
+            Giày sneaker thời trang, phong cách trẻ trung, phù hợp đi học và đi chơi.
+          </p>
+
+          <label>Màu:</label>
+          <select>
+            <option>Đen</option>
+            <option>Trắng</option>
+            <option>Xanh Dương</option>
+          </select>
+
+          <p class="gia">2.000.000đ</p>
+          <button class="nut-mua">Mua ngay</button>
+        </div>
+
+      </div>
+    </div>
+  </section>
+  
+  <section class="san-pham-noi-troi">
+  <div class="container">
+    <h1 class="tieu-de-block">Quần Áo</h1>
+    <div class="danh-sach-san-pham">
+      <div class="san-pham">
+        <a href="#">
+          <img src="../assets/IMG/Aonike.jpg" alt="Áo thun">
+        </a>
+        <h3 class="ten-san-pham">Áo thun Nike</h3>
+        <p class="mo-ta">
+          Áo thun cotton thoáng mát, dễ phối đồ, phù hợp mọi lứa tuổi.
+        </p>
+        <label>Màu:</label>
+        <select>
+          <option>Trắng</option>
+          <option>Đen</option>
+          <option>Xám</option>
+        </select>
+        <p class="gia">250.000đ</p>
+        <button class="nut-mua">Mua ngay</button>
+      </div>
+
+      <div class="san-pham">
+        <a href="#">
+          <img src="../assets/IMG/aoadidas.jpg" alt="Áo khoác">
+        </a>
+        <h3 class="ten-san-pham">Áo khoácAdidas</h3>
+        <p class="mo-ta">
+          Áo khoác thời trang, giữ ấm tốt, phù hợp mùa lạnh.
+        </p>
+        <label>Màu:</label>
+        <select>
+          <option>Đen</option>
+          <option>Xanh</option>
+          <option>Nâu</option>
+        </select>
+        <p class="gia">650.000đ</p>
+        <button class="nut-mua">Mua ngay</button>
+      </div>
+
+      <div class="san-pham">
+        <a href="#">
+          <img src="../assets/IMG/aopuma.webp" alt="Áo khoác">
+        </a>
+        <h3 class="ten-san-pham">Áo khoác Puma</h3>
+        <p class="mo-ta">
+          Áo khoác thời trang, giữ ấm tốt, phù hợp mùa lạnh.
+        </p>
+        <label>Màu:</label>
+        <select>
+          <option>Đen</option>
+          <option>Trắng</option>
+          <option>Đỏ</option>
+        </select>
+        <p class="gia">650.000đ</p>
+        <button class="nut-mua">Mua ngay</button>
+      </div>
+
+      <div class="san-pham">
+        <a href="#">
+          <img src="../assets/IMG/aokappa.jpg" alt="Áo khoác">
+        </a>
+        <h3 class="ten-san-pham">Áo khoác Kappa</h3>
+        <p class="mo-ta">
+          Áo khoác thời trang, giữ ấm tốt, phù hợp mùa lạnh.
+        </p>
+        <label>Màu:</label>
+        <select>
+          <option>Xanh Dương</option>
+          <option>Xám khói</option>
+          <option>Nâu</option>
+        </select>
+        <p class="gia">650.000đ</p>
+        <button class="nut-mua">Mua ngay</button>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="san-pham-noi-troi">
+  <div class="container">
+    <h1 class="tieu-de-block">Phụ Kiện</h1>
+
+    <div class="danh-sach-san-pham">
+
+      <div class="san-pham">
+        <a href="#">
+          <img src="../assets/IMG/non.jpg" alt="Nón">
+        </a>
+        <h3 class="ten-san-pham">Nón Wolf Active</h3>
+        <p class="mo-ta">
+          Nón thể thao năng động, phù hợp đi chơi và tập luyện.
+        </p>
+        <label>Màu:</label>
+        <select>
+          <option>Đen</option>
+          <option>Trắng</option>
+        </select>
+        <p class="gia">180.000đ</p>
+        <button class="nut-mua">Mua ngay</button>
+      </div>
+
+      <div class="san-pham">
+        <a href="#">
+          <img src="../assets/IMG/tuideocheo.jpg" alt="Túi">
+        </a>
+        <h3 class="ten-san-pham">Túi đeo chéo Nike</h3>
+        <p class="mo-ta">
+          Túi đeo chéo thời trang, tiện lợi khi ra ngoài.
+        </p>
+        <label>Màu:</label>
+        <select>
+          <option>Đen</option>
+          <option>Nâu</option>
+          <option>Xám</option>
+        </select>
+        <p class="gia">320.000đ</p>
+        <button class="nut-mua">Mua ngay</button>
+      </div>
+
+      <div class="san-pham">
+        <a href="#">
+          <img src="../assets/IMG/tatnike.jpg" alt="Vớ">
+        </a>
+        <h3 class="ten-san-pham">Vớ Nike</h3>
+        <p class="mo-ta">
+          Vớ cotton co giãn và thấm hút mồ hôi tốt.
+        </p>
+        <label>Màu:</label>
+        <select>
+          <option>Trắng</option>
+          <option>Đen</option>
+          <option>Xám</option>
+        </select>
+        <p class="gia">90.000đ</p>
+        <button class="nut-mua">Mua ngay</button>
+      </div>
+
+      <div class="san-pham">
+        <a href="#">
+          <img src="../assets/IMG/balokuno.webp" alt="Balo">
+        </a>
+        <h3 class="ten-san-pham">Balo Kuno</h3>
+        <p class="mo-ta">
+          Balo thời trang, phù hợp đi học và du lịch.
+        </p>
+        <label>Màu:</label>
+        <select>
+          <option>Đen</option>
+          <option>Xanh</option>
+          <option>Xám</option>
+        </select>
+        <p class="gia">550.000đ</p>
+        <button class="nut-mua">Mua ngay</button>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+  <footer class="footer">
+  <div class="container">
+    <div class="footer-wrap">
+
+      <div class="footer-block">
+        <h3>Thông Tin Liên Hệ</h3>
+        <p>📍 Địa chỉ: 123 Đường ABC, TP.HCM</p>
+        <p>📞 Hotline: 0123 456 789</p>
+        <p>✉ Email: shopgiay@gmail.com</p>
+      </div>
+
+      <div class="footer-block">
+        <h3>Theo Dõi</h3>
+        <ul class="footer-social">
+          <li><a href="#"><i class="fa-brands fa-facebook"></i> Facebook</a></li>
+          <li><a href="#"><i class="fa-brands fa-instagram"></i> Instagram</a></li>
+          <li><a href="#"><i class="fa-brands fa-tiktok"></i> TikTok</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-block">
+        <h3>Hỗ Trợ</h3>
+        <ul>
+          <li><a href="#">Chính sách đổi trả</a></li>
+          <li><a href="#">Hướng dẫn mua hàng</a></li>
+          <li><a href="#">Chính sách bảo mật</a></li>
+          <li><a href="#">Câu hỏi thường gặp</a></li>
+        </ul>
+      </div>
+
+    </div>
+
+    <div class="footer-bottom">
+      © 2026 Shop Giày – All rights reserved
+    </div>
+  </div>
+</footer>
+<script src="../js/main.js"></script>
+</body>
+</html>
